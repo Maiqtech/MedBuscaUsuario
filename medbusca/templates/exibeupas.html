@@ -172,6 +172,11 @@ tr:nth-child(even) {
     }
 }
 
+.material-icons {
+  margin-left: 20px;
+  font-size: 40px;
+  color: rgb(236, 13, 13);
+}
 
     </style>
 </head>
@@ -210,7 +215,7 @@ tr:nth-child(even) {
                             <td>{{ unidade.bairro_unidade }}</td>
                             <td>{{ unidade.cidade_unidade }}</td>
                             <td>{{ unidade.estado_unidade }}</td>
-                            <td><a href="{{ unidade.url_unidade }}"><i class="material-icons">location_on</i></a></td>
+                            <td><a href="{{ unidade.url_unidade }}"><i class="material-icons">add_location</i></a></td>
                         </tr>
                     {% endfor %}
                 {% else %}

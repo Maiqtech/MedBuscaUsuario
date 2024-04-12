@@ -17,10 +17,14 @@
     <div class="container">
         <h1>Alterações no banco de dados</h1>
         <form action="/gestor_upa" method="post" enctype="multipart/form-data">
-            <label for="csv_file">Enviar arquivo CSV:</label>
+            <label for="csv_file" class="custom-file-upload">
+                Escolher Arquivo
+            </label>
             <input type="file" id="csv_file" name="csv_file" accept=".csv" required>
             <input type="submit" value="Enviar Arquivo CSV">
         </form>
     </div>
+    
+    
 </body>
 </html>

@@ -22,22 +22,17 @@
 
         form {
             width: 40%;
-            height: 40%;
             margin: 0 auto;
+            margin-bottom: 30px;
             background-color: #fff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        label,
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="submit"],
-        input[type="checkbox"] {
+        .label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 20px;
         }
 
         input[type="text"],
@@ -70,7 +65,7 @@
         .nav-list {
             list-style-type: none;
             margin-right: 15px;
-            padding: 15px;
+            padding: 10px;
             display: flex;
             justify-content: right;
         }
@@ -89,10 +84,16 @@
             text-decoration: underline;
         }
 
-        /* Estilos responsivos */
+        /* Responsive Styles */
+        @media screen and (max-width: 1024px) {
+            form {
+                width: 60%;
+            }
+        }
+
         @media screen and (max-width: 768px) {
             form {
-                width: 90%;
+                width: 80%;
             }
         }
 
@@ -118,11 +119,11 @@
     <p>{{ message }}</p>
         {% endif %} 
     <form action="{{ url_for('cadastrar_gestor') }}" method="post">
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" required>
-        <br>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
         <br>
         <label for="telefone">Telefone:</label>
         <input type="text" id="telefone" name="telefone" required>

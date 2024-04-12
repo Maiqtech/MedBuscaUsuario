@@ -117,10 +117,10 @@ def buscar_localizacao_google_maps(endereco):
 
 @app.route('/atualiza_endurl', methods=['POST', 'GET'])
 def atualizaurl():
-    unidades = Disponibilidade_medico_view.query.all()
+    unidades = ReceberInfo.query.all()
     for unidade in unidades:
         endereco = (
-            unidade.rua_unidade + " " + unidade.numero_unidade + " " +
+            unidade.rua_unidade + " " + unidade.nome_unidade + " " +
             unidade.bairro_unidade + " " + unidade.cidade_unidade + " " +
             unidade.cep_unidade + " " + unidade.estado_unidade
         )

@@ -27,6 +27,17 @@ input[type="submit"],
     font-size: 16px;
 }
 
+.botao-inicio {
+    display: inline-block; /* ou block, dependendo do layout desejado */
+    width: 100%; /* Ajuste o valor conforme necessário */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 10px; /* Adiciona preenchimento interno para melhor legibilidade */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none; /* Remove sublinhado padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
 
 
 /* Estilizando os botões */
